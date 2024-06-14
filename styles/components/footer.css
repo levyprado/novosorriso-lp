@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1.5rem;
+}
+
+.footer__title {
+    text-align: center;
+    font-size: var(--font-sm);
+}
+
+.footer__anchor {
+    color: var(--clr-primary);
+}

@@ -1,0 +1,102 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 0.75rem;
+}
+
+.header__logo {
+    width: 3.5rem;
+    height: auto;
+}
+
+.header__nav {
+    display: none;
+}
+
+.header__list {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.header__list-item {
+    color: var(--clr-gray);
+}
+
+.header__list-item:hover {
+    color: var(--clr-dark);
+}
+
+.header__anchor {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header__contact {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header__btn {
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    border-radius: 12px;
+    font-size: var(--font-sm);
+    border: 1px solid var(--clr-primary);
+    transition: background-color 0.3s;
+}
+
+.header__btn--phone {
+    display: none;
+    color: var(--clr-primary);
+    font-weight: 500;
+    gap: 0.3rem;
+}
+
+.header__btn-icon {
+    width: 1.125rem;
+    height: auto;
+}
+
+.header__btn--contact {
+    background-color: var(--clr-primary);
+    color: var(--clr-light);
+}
+
+.header__btn--contact:hover {
+    background-color: var(--clr-secondary);
+}
+
+/* 475px */
+@media (min-width: 29.6875rem) {
+    /* show contact number button */
+    .header__btn--phone {
+        display: flex;
+    }
+}
+
+/* 640px */
+@media (min-width: 40rem) {
+    /* increase header contact buttons gap */
+    .header__contact {
+        gap: 1rem;
+    }
+}
+
+/* 1024px */
+@media (min-width: 64rem) {
+    /* increase header padding-block */
+    .header {
+        padding-block: 1.25rem;
+    }
+
+    /* show nav */
+    .header__nav {
+        display: block;
+    }
+}
